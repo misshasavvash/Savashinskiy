@@ -5,9 +5,9 @@ def caesar_cipher(message, key):
         char = message[i]
         if char.isalpha():
             if char.islower():
-                encrypted_char = chr((ord(char) - 97 + key) % 26 + 97)
+                encrypted_char = chr((ord(char) - 1040 + key) % 33 + 1048)
             else:
-                encrypted_char = chr((ord(char) - 65 + key) % 26 + 65)
+                encrypted_char = chr((ord(char) - 1072 + key) % 33 + 1072)
             encrypted_message += encrypted_char
         else:
             encrypted_message += char
